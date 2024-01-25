@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container" >
+        <label for="usermame">Username :</label>
+        <input type="text" id="user" placeholder="Masukan Username">
+        <label for="password">Password :</label>
+        <input type="password" id= "password" placeholder="Masukkan Password">
+        <button onclick="login()">login</button>
+    </div>
+</body>
+<script type="text/javascript">
+    function login() {
+
+        var  username = document.getElementById('user').value;
+        var  password = document.getElementById('password').value;
+
+        var correctUsername = 'newspaper';
+        var correctPassword = 'paper';
+        var correctUsername2 = 'toilet paper';
+        var correctPassword2 = 'albert';
+
+        if (username === correctUsername && password === correctPassword) {
+            alert('dunia: kamu cantik/ganteng kamu aman, akhirat: kamu taat kamu selamat');
+            window.location.href = 'latihan1.html';
+        
+        }else{ if (username === correctUsername && password === correctPassword) else {
+            alert('wo ai baba he mama')
+            window.location.href = 'latihan1.html';
+        } else {
+            alert('haiya');
+        }
+    }
+</script>
+</html>
